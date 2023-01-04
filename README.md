@@ -135,3 +135,14 @@ As we can see, python command is deprecated so we need to re-adjust the latest c
 ```bash
 $ sudo apt-get install build-essential ocaml automake autoconf libtool wget python-is-python3 libssl-dev dkms
 ```
+
+# GEM5 SIMULATION
+
+## 1. Building
+You can build gem5 from the official [**website**](https://www.gem5.org/documentation/general_docs/building)
+## 2. Running
+After building your Python simulation script, you can run it with:
+```bash
+build/X86/gem5.opt [complete path to your simulation script]
+```
+But you have to be in the gem5 folder first. It is simply the folder you obtain after cloning the gem5 project from the official github repository.
