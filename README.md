@@ -146,3 +146,20 @@ After building your Python simulation script, you can run it with:
 build/X86/gem5.opt [complete path to your simulation script]
 ```
 But you have to be in the gem5 folder first. It is simply the folder you obtain after cloning the gem5 project from the official github repository.
+
+## 3. Three-level cache system
+In order to build a three-level cache system, you have to make all the changes in gem5 sources files in my Three level cache system in this repository. You will find for instance:
+* Options.py in configs/common/ as well as Caches.py and CacheConfig.py
+* XBar.py is in src/mem/
+* BaseCPU.py in src/cpu/
+
+After doing the exact same changes as me, and taking into account the other files in the same directory of this repository, you can build your system with :
+```bash
+build/X86/gem5.opt [complete path to your configuration script] --l2_size='1MB' --l1d_size='128kB' --l3_size='1MB'
+```
+
+In my case it will be:
+```bash
+build/X86/gem5.opt configs/learning_gem5/part1/three_level.py --l2_size='1MB' --l1d_size='128kB' --l3_size='1MB'
+```
+You can check that your system has been totally implemented in m5out/config.ini file
