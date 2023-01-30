@@ -1,1 +1,0 @@
-cmd_/home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/modules.order := {   echo /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/minimal_impl.ko; :; } | awk '!x[$$0]++' - > /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/modules.order
