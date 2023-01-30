@@ -1,1 +1,0 @@
-cmd_/home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/minimal_impl.mod := { echo  /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/minimal_impl.o;  echo; } > /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/minimal_impl.mod
