@@ -1,6 +1,13 @@
-obj-m += lkm_base.o
+CC=gcc
+CFLAGS=-Wall
 
-all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+all: apic_base_address
+
+apic_base_address: apic_base_address.c
+	$(CC) $(CFLAGS) -o apic_base_address apic_base_address.c
+
+run: apic_base_address
+	./apic_base_address
+
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	rm -f apic_base_address
