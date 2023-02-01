@@ -1,1 +1,0 @@
-cmd_/home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/dump_memory/dump_memory.mod := { echo  /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/dump_memory/dump_memory.o;  echo; } > /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/dump_memory/dump_memory.mod
