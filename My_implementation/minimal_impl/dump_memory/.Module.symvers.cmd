@@ -1,0 +1,1 @@
+cmd_/home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/dump_memory/Module.symvers := sed 's/\.ko$$/\.o/' /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/dump_memory/modules.order | scripts/mod/modpost -m -a  -o /home/sory/Documents/PRIM/PRIM/My_implementation/minimal_impl/dump_memory/Module.symvers -e -i Module.symvers   -T -
